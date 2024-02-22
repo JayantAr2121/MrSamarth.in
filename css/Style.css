@@ -1,0 +1,10 @@
+.Submitbtn{
+    height: 70px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color:#f0bc24 ;
+    border: 0px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 7px;
+}
