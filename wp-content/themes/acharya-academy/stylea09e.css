@@ -532,7 +532,7 @@ footer.aa-footer{
     content: '';
     width: 88px;
     height: 100px;
-    background: url(img/page-title-img-after.png) no-repeat;
+    /* background: url(img/page-title-img-after.png) no-repeat; */
     bottom: 0;
     left: 61%;
     position: absolute;
