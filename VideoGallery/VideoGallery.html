@@ -753,7 +753,7 @@
 							</div>
 						</section>
 						
-						<div class="elementor-element elementor-element-19065238 elementor-widget elementor-widget-shortcode" >
+						<div id="boxcontainer" class="elementor-element elementor-element-19065238 elementor-widget elementor-widget-shortcode" >
 							<div  id="Videorow" class="elementor-widget-container" >
 								
 						  
@@ -794,14 +794,8 @@
 							function Show() {
 								firebase.database().ref().child("Data/Videos").on("value", function (snap) {
 									if (snap.val() == null) {
-										var row1 = document.createElement("tr")
-										var celll = document.createElement("td")
-										celll.colSpan = "7"
-										celll.style.fontSize = "20px"
-										celll.style.fontWeight = "600"
-										celll.innerHTML = "No Record Found"
-										row1.append(celll)
-										document.getElementById("Videorow").append(row1)
+										alert("No Video Found")
+										window.location.href="../index.html"
 									}
 									else {
 										document.getElementById("Videorow").innerHTML = ""
